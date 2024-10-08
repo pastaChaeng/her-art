@@ -19,19 +19,22 @@ const NavBar = () => {
   };
 
   return (
-    <div className='p-6 left-0 shadow-md fixed top-0 w-full z-10 bg-white'>
+    <nav className='p-6 left-0 shadow-md fixed top-0 w-full z-10 bg-white'>
       <div className='container mx-auto flex justify-between items-center'>
-        <div className='text-2xl ml-28 md:ml-28 lg:ml-28'>
+        <div className='text-2xl ml-24 md:ml-28 lg:ml-28'>
           <Link href='/' className='text-[#2C2C2C]'>
             
               <span className='text-[#55AD9B]'>HER</span><span className='text-[#2C2C2C]'>ARTGALLERY.</span>
             
           </Link>
         </div>
-        <div className='flex items-center mr-28 md:mr-28 lg:mr-28'>
+        <div className='flex items-center mr-28 md:mr-28 lg:mr-28 space-x-8'>
           <div className='hidden sm:flex space-x-4'>
             {navData.map((link, i) => (
-              <Link href={link.path} key={i} className={`text-[#2C2C2C] hover:text-[#55AD9B] ${
+              <Link 
+              href={link.path} 
+              key={i} 
+              className={`text-[#2C2C2C] hover:text-[#55AD9B] ${
                 link.path === pathname ? 'font-bold' : ''
               }`}>
                 
@@ -119,7 +122,7 @@ const NavBar = () => {
           </div>
         </div>
       )}
-    </div>
+    </nav>
   );
 };
 

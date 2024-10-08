@@ -1,8 +1,8 @@
 
-const index = () => {
+const Work = () => {
   return (
     <div>index</div>
   )
 }
 
-export default index
+export default Work

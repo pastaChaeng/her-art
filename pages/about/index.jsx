@@ -1,8 +1,8 @@
 
-const index = () => {
+const About = () => {
   return (
     <div>index</div>
   )
 }
 
-export default index
+export default About

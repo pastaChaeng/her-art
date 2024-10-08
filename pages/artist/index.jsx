@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-
-const Index = () => {
+import Head from 'next/head';
+const Artist = () => {
 
   const artist = {
     name: 'Preshel Jen Chavez',
@@ -10,7 +10,11 @@ const Index = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8">
+   
+    <div className=" bg-slate-950 container mx-auto px-4 py-8">
+      <Head>
+      <title>Arlene Joy Nacion | Portfolio</title>
+    </Head>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
         <div className="md:order-2">
           <Image
@@ -31,4 +35,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Artist;

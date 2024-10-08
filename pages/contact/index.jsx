@@ -1,8 +1,8 @@
 
-const index = () => {
+const Contact = () => {
   return (
     <div>index</div>
   )
 }
 
-export default index
+export default Contact
